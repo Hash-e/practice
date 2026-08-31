@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std::string name;
+
+    std::cout << "Enter your name:";
+    std::getline(std::cin, name);
+
+    if(name.empty()){
+        std::cout << "You didnt enter a name";
+    }
+
+    name.append("@gmail.com");
+
+    std::cout << "your username is now " << name;
+
+
+    //else if(name.length() > 12){
+        //std::cout << "Your name can't be over 12 characters";
+    //}
+    //else{
+        //std::cout << "Welcome " << name;
+
+
+    //}
+
+    return 0;
+}
